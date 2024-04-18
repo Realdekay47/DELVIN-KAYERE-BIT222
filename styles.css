@@ -1,0 +1,92 @@
+/* General Styles */
+body, .container { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+.container { width: 80%; margin: auto; }
+
+/* Navigation Bar Styles */
+.navbar { background-color: #a735f34b; color: #a6aef5; padding: 1rem 0; }
+.nav-links { display: flex; justify-content: center; }
+.nav-links li { margin-right: 1rem; }
+.nav-links li a { color: #fff; text-decoration: none; padding: 0.5rem 1rem; border-radius: 5px; transition: background-color 0.3s ease; }
+.nav-links li a:hover { background-color: #1fd6f7; }
+.active { font-weight: bold; }
+
+/* Hero Section Styles */
+.hero { background-color: #677feb71; padding: 2rem 0; text-align: center; }
+.hero h1 { font-size: 3rem; margin-bottom: 1rem; color: #111111; }
+.hero p { font-size: 1.5rem; color: #1c0583; }
+
+/* Button Styles */
+.btn { display: inline-block; padding: 0.5rem 1rem; background-color: #007bff; color: #f3e2e2; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease; }
+.btn:hover { background-color: #58ec2b; }
+.btn-primary { background-color: #007bff; }
+.btn-secondary { background-color: #acca25; }
+
+/* Footer Styles */
+.footer { background-color: #49d6e0; color: #fff; padding: 2rem 0; text-align: center; }
+.footer p { margin: 0.5rem 0; }
+.footer-bottom { background-color: #111; padding: 1rem 0; }
+
+/* style for logo container */
+.logo {
+  text-align: center;
+}
+
+/* style for logo image */
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+/* Form Styles */
+.form-group { margin-bottom: 1rem; }
+.form-group label { display: block; margin-bottom: 0.5rem; }
+input[type="text"], input[type="email"], input[type="tel"], textarea, select { width: 100%; padding: 0.5rem; border-radius: 5px; border: 1px solid #ccc; box-sizing: border-box; margin-bottom: 0.5rem; }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .container { width: 90%; }
+    .nav-links { justify-content: space-around; }
+    .hero h1 { font-size: 2.5rem; }
+    .hero p { font-size: 1.2rem; }
+}
+
+/* Shape Container Styles */
+.shape-container { display: flex; justify-content: space-around; align-items: center; margin-top: 20px; }
+
+/* Circle and Rectangle Styles */
+.circle, .rectangle { width: 200px; height: 200px; border-radius: 50%; overflow: hidden; border: 2px solid #333; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+.circle img, .rectangle img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Product Grid Styles */
+.products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.product { background-color: #a856d8a9; padding: 20px; border-radius: 8px; }
+.product img { width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px; }
+.product-info { text-align: center; }
+.product-info h3 { font-size: 1.2em; margin-bottom: 5px; }
+.product-info p { font-size: 1em; color: #26067e; margin-bottom: 10px; }
+.product-info .btn { display: inline-block; padding: 8px 16px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease; }
+.product-info .btn:hover { background-color: #0056b3; }
+
+/* Shopping Cart Styles */
+.cart-items { margin-top: 20px; }
+.cart-item { display: flex; align-items: center; margin-bottom: 20px; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
+.cart-item img { width: 100px; height: auto; border-radius: 5px; margin-right: 20px; }
+.item-info { flex-grow: 1; }
+.item-info h3 { font-size: 1.2em; margin-bottom: 5px; }
+.item-info p { font-size: 1em; color: #2b097a; margin-bottom: 10px; }
+.item-info input[type="number"] { width: 60px; padding: 5px; border-radius: 5px; border: 1px solid #75c5eb; }
+.item-info .btn-remove { padding: 5px 10px; background-color: #dc3545; color: #f0f1f1; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; }
+.item-info .btn-remove:hover { background-color: #c82333; }
+
+/* Promotional Banner Styles */
+.promo-banner { perspective: 1000px; position: relative; width: 100%; max-width: 600px; margin: 0 auto; }
+.cubic-container { width: 100%; height: 300px; position: relative; transform-style: preserve-3d; transition: transform 0.5s ease; }
+.cubic-content { width: 100%; height: 100%; position: absolute; transform-style: preserve-3d; }
+.cubic-face { width: 100%; height: 100%; position: absolute; backface-visibility: hidden; }
+.cubic-front { transform: rotateY(0deg); }
+.cubic-back { transform: rotateY(180deg); }
+.cubic-image { width: 100%; height: 100%; object-fit: cover; }
+
+/* Button Hover Styles */
+.btn:hover { background-color: #0056b3; }
+.btn-secondary { background-color: #6c757d; }
